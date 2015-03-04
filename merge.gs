@@ -7,7 +7,7 @@
  *  Example: "This is [header1] that corresponds to a value of [header2]."
  */
 function doMerge() {
-  var selectedTemplateId = "1Gb5BhUiTD11kx_STHvt53LA46HV01sxdt1Huw4crxgc";//Copy and paste the ID of the template document here (you can find this in the document's URL)
+  var selectedTemplateId = "1foobarfoobarfoobarfoobarfoobarfoobar";//Copy and paste the ID of the template document here (you can find this in the document's URL)
   
   var templateFile = DriveApp.getFileById(selectedTemplateId);
   var mergedFile = templateFile.makeCopy();//make a copy of the template file to use for the merged File. Note: It is necessary to make a copy upfront, and do the rest of the content manipulation inside this single copied file, otherwise, if the destination file and the template file are separate, a Google bug will prevent copying of images from the template to the destination. See the description of the bug here: https://code.google.com/p/google-apps-script-issues/issues/detail?id=1612#c14
